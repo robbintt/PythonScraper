@@ -1,0 +1,6 @@
+This project is designed to be a little testing sandbox for scripts to parse
+a beautifulsoup4 "soup" data structure.  The parsers are very specific for
+an individual webpage and need to be monitored somehow to ensure the target
+webpage doesn't change structurally and break the parser.
+
+

@@ -1,0 +1,14 @@
+
+# This .gitignore is for a few files generated when running this script.
+
+# The *.pyc files are ignored for convenience with git add.
+# The *.json files are ignored for convenience with git add.
+# The .*pickle files are ignored for convenience with git add.
+
+
+# Untracked files: #
+####################
+*.pyc
+venv/
+pickle/
+data/

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /home/robbintt/production/cl_scrape_project/cl_scrape_cronjob/
+
+. ../venv/bin/activate
+
+python -m cProfile -o shiny_new_profile.profile cl_scrape_cronjob.py
+
+deactivate

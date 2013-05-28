@@ -1,0 +1,13 @@
+
+# A symlink exists for the cronjob bash script in this directory, from /etc/cron.hourly/
+# 
+# The symlink allows datamining to occur on a scheduled basis
+# 
+#
+# If renaming files, be sure to keep /etc/cron.hourly/ up to date
+# 
+# Also make sure that all symlinks in /etc/cron.hourly/ are owned by root.
+#
+# Finally, in the bash script, the current directory must be specified from / in order
+# to properly activate the virtualenv.
+#

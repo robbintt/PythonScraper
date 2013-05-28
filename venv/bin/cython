@@ -1,0 +1,13 @@
+#!/usr/bin/env python2.7
+
+import os; activate_this=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'activate_this.py'); execfile(activate_this, dict(__file__=activate_this)); del os, activate_this
+
+# EASY-INSTALL-ENTRY-SCRIPT: 'Cython==0.18','console_scripts','cython'
+__requires__ = 'Cython==0.18'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('Cython==0.18', 'console_scripts', 'cython')()
+    )

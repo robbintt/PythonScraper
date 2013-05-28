@@ -1,0 +1,26 @@
+
+Pseudocode:
+
+cd to a specified FULL PATH directory.  you will be going back to this path.
+
+compile a list of subdirectories to iterate through (python or bash?)
+    the rule of thumb is: you should expect to go through EVERY subdirectory
+
+iterate through this list of subdirectories:
+    move to the current subdirectory
+    (.py)use a python script to combine all json files in the subdirectory
+        use argv to pass the current FULL PATH to the python script
+    zip all files in the subdirectory into a zip for the day
+    delete the originating files
+
+
+Unanswered Questions:
+    Where should the FINAL daily json and the zip files go?
+    Should this be a priority? I am generating 732 jsons per month per
+        project, but is this unacceptable? It is trivial to combine jsons.
+    Is the aggregate storage cost high without compressing data?
+        20kilobytes per json.  1.4 megabytes per project per month.
+        A year of data takes 16 megabytes. A decade takes 160 megabytes.
+    COMPRESSION IS NOT RELEVANT OR NECESSARY
+    AGGREGATION IS NOT RELEVANT OR NECESSARY
+    Ditch this part of the project, it is unnecessary post-processing.

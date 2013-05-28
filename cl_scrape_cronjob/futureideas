@@ -1,0 +1,34 @@
+Next we need the following:
+============================
+
+
+** Add new parsers / NON-craigslist parsers:
+Now that the application has been generalized to work with non-craigslist
+websites, I should add a bunch of parsers. Parsing more data will inform me
+on the best way to store the data per the **Add Functionality** bullet.
+
+
+** Add Functionality:
+Provide a persistent structure for data. It would be best to do this with a
+separate python script, called from cron by a bash script. This could be
+done daily or it could be somehow specified in documentation accompanying
+the parser file/package.  Food for thought, this is a long term objective.
+
+
+DONE - ** Streamline:   Make a package of parsers in a subdirectory? 
+                        I would like to put all parsers in a package
+DONE -  Build a config parser and module call loop for the config file.
+DONE -  Detect if the current hour data overlaps with the previous hour and 
+        collect more data if they do not overlap.
+DONE -  Merge the current data into a data structure which removes 
+        duplicates up front.  The best way to accomplish this is likely to 
+        merge it with the previous hour data.
+DONE -  Add a timestamp field to each data point.
+
+DONE -  Generalization:
+Generalize the stop conditions in the scrape iterator in the class function
+and define them in the parser file. Right now there is just one stop
+condition, when a duplicate dict entry from the last scrape entry is found.
+This needs to be unpacked from the generalized class and included in the
+scraper.
+

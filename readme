@@ -1,0 +1,22 @@
+This is the full cl_scrape_project, including experimental directories and 
+production tools.
+
+The project uses python 2.7.3 with a virtualenv used for installing beautifulsoup4
+
+The virtualenv also had cython and lxml.
+
+In particular, the raspberry pi virtualenv has been made portable so a reconstruction
+is no longer necessary when switching between directories.
+
+the venv constructor script will construct a virtual environment in the
+local directory and pip install beautifulsoup4 in that virtual environment.
+
+
+The new lxml parser in beautifulsoup has additional needs:
+apt-get install libxml2-dev libxslt1-dev python-dev
+pip install cython
+pip install lxml
+
+these dependencies allow the beautifulsoup soup creator to use the 'lxml' parser,
+which is much faster.
+

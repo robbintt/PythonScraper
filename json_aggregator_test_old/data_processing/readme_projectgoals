@@ -1,0 +1,5 @@
+The goal of this directory is to experiment with postprocessing a chunk of json 
+data that has been extracted from a website.
+
+This postprocessing will, for the most part, be integrated into the parser 
+module, but some postprocessing includes non-json data structures.

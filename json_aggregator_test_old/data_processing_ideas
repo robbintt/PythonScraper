@@ -1,0 +1,27 @@
+All data is now saved in the project subdirectory of the "data" directory.
+
+We may now process this data using a bash script that calls a python script.
+
+1. bash script will call a python script to combine all the json files and
+    save this information in a permanent directory structure.
+2. bash script will zip up all the json files and save them in a tarball
+    in the same permanent directory structure.
+3. bash script will depete all json files in the current subdirectory.
+
+This bash script should be called daily from the cron daily folder. This
+will be a separate cronjob.  This data collector should be in a separate
+subdirectory of the main project, and the permanent data storage location
+can also be in a separate subdirectory from the scraper.
+
+This will mark the first differentating factor between the whole project and
+solely the scraper segment of the project.
+
+**
+This will also close out the final future project goal for the scraper, and
+open the way to generate a significant amount more parser files.
+***
+
+***
+Additionally, the door will be open to begin forming generalized methods for
+post-processing apartment data, potentially with a web-app utilizing node.js
+***

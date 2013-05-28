@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# this virtualenv constructor does not create cython or lxml
+# this virtualenv constructor also doesn't make the virtualenv relocateable
+# virtualenv --relocatable venv   # should be done after installing all modules with pip
+
+virtualenv venv
+
+. venv/bin/activate
+
+pip install beautifulsoup4
+
+deactivate
